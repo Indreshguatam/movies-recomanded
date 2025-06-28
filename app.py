@@ -14,8 +14,7 @@ def download_file_from_gdrive_gdown(file_id, destination):
         st.write(f"Downloading {destination} from Google Drive...")
         gdown.download(url, destination, quiet=False)
         st.write(f"Downloaded {destination}.")
-    else:
-        st.write(f"{destination} already exists.")
+    
 
 # -----------------------------------------------------
 # Download similarity.pkl from Google Drive
